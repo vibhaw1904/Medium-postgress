@@ -68,7 +68,7 @@ if(!success){
         return c.json({error:"user noit found"})
       }
       const jwt= await sign({id:user.id},c.env.JWT_SECRET)
-      return c.json({jwt})
+      return c.text(jwt)
     
   })
   
