@@ -44,7 +44,7 @@ export const useBlogs=()=>{
             setAllBlogs(res.data.posts)
             setLoading(false)
         })
-    })
+    },[])
     return{
 
         loading,allblogs
